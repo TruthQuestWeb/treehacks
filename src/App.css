@@ -34,73 +34,74 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.navbg{
-    color: #2f2f2f;
-    /* background-color: 	#f3dfc1; */
-    text-align: center;
-    padding: 15px 0px 8px 0px;
+.navbg {
+  color: #2f2f2f;
+  /* background-color: 	#f3dfc1; */
+  text-align: center;
+  padding: 15px 0px 8px 0px;
 }
 
-.navfont{
+.navfont {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 70px;
   text-transform: uppercase;
   display: inline-block;
   line-height: 72px;
-  
+
 }
 
-.navimg{
+.navimg {
   margin-bottom: 30px;
 }
 
-.navunderline{
-    color: #000000;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 7px;
-    margin-top: -40px;
-    padding: 0px 0px 20px 0px;
+.navunderline {
+  color: #000000;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-top: -40px;
+  padding: 0px 0px 20px 0px;
 }
 
-@media screen and (max-width:882px){
-  .navimg{
+@media screen and (max-width:882px) {
+  .navimg {
     margin-bottom: 0px;
   }
 
-  .navunderline{
+  .navunderline {
     margin-top: 0px;
   }
 }
 
-.result{
+.result {
   padding: 20px 0px 0px 0px;
 }
 
 /* Footer css */
 .footer {
-	text-align: center;
-	font-size: 1em;
-	font-weight: bold;
-	margin-top: 20px;
-	padding: 5px 0;
-	border-top: 3px double black;
-	border-bottom: 3px double black;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 5px 0;
+  border-top: 3px double black;
+  border-bottom: 3px double black;
 }
 
 .searchcontainer {
   margin: auto auto;
   width: 80%;
-  max-width:600px;
+  max-width: 600px;
 }
 
 /* The point of this tutorial is here */
@@ -108,6 +109,7 @@
   display: flex;
   flex-direction: row;
 }
+
 .search-field {
   width: 100%;
   padding: 10px 35px 10px 15px;
@@ -121,14 +123,14 @@
   border: none;
   outline: none;
   margin-left: -33px;
-  border-radius: 0 100px 100px 0; 
+  border-radius: 0 100px 100px 0;
 }
 
-.search-button:hover{
-  cursor:pointer;
+.search-button:hover {
+  cursor: pointer;
 }
 
-.headline.hl1{
+.headline.hl1 {
   font-weight: 800;
   font-size: 44px;
   text-transform: uppercase;
@@ -136,7 +138,7 @@
 
 }
 
-.headline.hl11{
+.headline.hl11 {
   font-weight: 550;
   font-size: 30px;
   font-style: italic;
@@ -144,41 +146,41 @@
 
 }
 
-.secondary-section .content{
+.secondary-section .content {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-  
-.secondary-section h4{
+
+.secondary-section h4 {
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
   text-transform: uppercase;
 }
-  
-.secondary-section h3{
+
+.secondary-section h3 {
   font-size: 30px;
   margin: 10px auto;
   text-transform: uppercase;
   font-weight: 800;
 }
-  
-.secondary-section p{
+
+.secondary-section p {
   text-align: justify;
   text-align-last: center;
 }
-  
-.secondary-section a{
+
+.secondary-section a {
   text-decoration: none;
   font-style: italic;
   font-weight: 600;
   color: #333;
   letter-spacing: -1px;
 }
-  
 
 
-.citation{
+
+.citation {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   line-height: 44px;
@@ -190,7 +192,8 @@
   font-feature-settings: "liga", "dlig";
 
 }
-.citation:before{
+
+.citation:before {
   border-top: 1px solid #2f2f2f;
   content: '';
   width: 100px;
@@ -198,7 +201,8 @@
   display: block;
   margin: 0 auto;
 }
- .citation:after{
+
+.citation:after {
   border-bottom: 1px solid #2f2f2f;
   content: '';
   width: 100px;
@@ -208,34 +212,36 @@
 }
 
 /* main image */
- .figure {
+.figure {
   padding: 40 0 20 0px;
   align-items: center;
 }
-.figcaption{
-font-style: italic;
-font-size: 12px;
+
+.figcaption {
+  font-style: italic;
+  font-size: 12px;
 }
+
 .media {
   -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
   filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
   mix-blend-mode: multiply;
   width: 100%;
-  margin-right: 30%;
-  margin-top: 50%;
+  margin-top: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.headline.hl4{
+.headline.hl4 {
   font-weight: 700;
   font-size: 12px;
   box-sizing: border-box;
   padding: 10px 0 10px 0;
   text-align: center;
 }
-.headline.hl4:before{
+
+.headline.hl4:before {
   border-top: 1px solid #2f2f2f;
   content: '';
   width: 100px;
@@ -244,7 +250,8 @@ font-size: 12px;
   margin: 0 auto;
   text-align: center;
 }
-.headline.hl4:after{
+
+.headline.hl4:after {
   border-bottom: 1px solid #2f2f2f;
   content: '';
   width: 100px;
@@ -256,15 +263,16 @@ font-size: 12px;
 }
 
 .founderh11 {
-   font-family: Oswald, serif; 
-   font-size: 40px;
-   text-align: center;
-   font-weight: 700;
+  font-family: Oswald, serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
 
 }
+
 .founderh12 {
-  font-family: Oswald, serif; 
+  font-family: Oswald, serif;
   font-size: 40px;
   text-align: left;
   font-weight: 700;
@@ -276,35 +284,51 @@ font-size: 12px;
   padding: 0 0 20 0px;
   align-items: center;
 }
-.founderfigcaption{
-font-style: italic;
-font-size: 12px;
-text-align: center;
+
+.founderfigcaption {
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
 }
+
 .foundermedia {
   -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
   filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
   mix-blend-mode: multiply;
-  width:100%; 
-  height:100%;
-  max-height:300px;
-  max-width:300px;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  max-width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.notFoundMedia{
+.notFoundMedia {
   -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
   filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
   mix-blend-mode: multiply;
-  width:100%; 
-  height:100%;
-  max-height:600px;
-  max-width:600px;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  max-width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.connectingMedia {
+  -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+  filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
@@ -314,59 +338,60 @@ text-align: center;
 
 
 .article img {
-	filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /* --- ARTICLE 1 --- */
 
 .article-1 h2 {
-	font-size: 42px;
-	line-height: 58px;
-	margin: 10px 0;
+  font-size: 42px;
+  line-height: 58px;
+  margin: 10px 0;
   text-align: center;
 }
 
 .article-1 h3 {
-	font-size: 32px;
-	line-height: 38px;
+  font-size: 32px;
+  line-height: 38px;
 }
 
-.quote { 
-	display: block;
-	margin: 10px auto;
-	
-	font-family: 'IM Fell Great Primer';
-	font-style: italic;
-	font-weight: bold;
-	font-size: 24px;
-	text-align: center;
+.quote {
+  display: block;
+  margin: 10px auto;
+
+  font-family: 'IM Fell Great Primer';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
 }
 
-.img-wrap { 
-	float: right; 
+.img-wrap {
+  float: right;
   -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
   filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
   mix-blend-mode: multiply;
-  width:100%; 
-  height:100%;
-  max-height:300px;
-  max-width:300px;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  max-width: 300px;
 
 }
+
 .img-wrap p {
-	max-width: 100%;
-	font-family: 'IM Fell Great Primer';
-	font-style: italic;	
+  max-width: 100%;
+  font-family: 'IM Fell Great Primer';
+  font-style: italic;
 }
 
 /* --- ARTICLE 2 --- */
 
 .article-2 h3 {
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 
 header ul {
@@ -375,44 +400,54 @@ header ul {
   padding: 0.5em 0;
   width: 100%;
 }
+
 header ul li {
   display: inline-block;
   list-style: none;
   width: 33%;
 }
+
 header ul li:first-child {
   font-size: 0.8em;
   text-indent: 1em;
 }
+
 header ul li:nth-child(2) {
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
 }
+
 header ul li:last-child {
   text-align: right;
 }
+
 article h3 {
   display: inline;
 }
+
 article p {
   column-count: 3;
   text-align: justify;
 }
-@media screen and (max-width:882px){
-  article p{
+
+@media screen and (max-width:882px) {
+  article p {
     column-count: 1;
   }
 }
+
 article p span {
   display: block;
   text-align: center;
   font-weight: bold;
 }
+
 article p span span {
   display: inline;
   text-transform: uppercase;
 }
+
 article p cite {
   display: block;
   border-top: 1px solid #000;
@@ -424,6 +459,7 @@ article p cite {
   text-align: left;
   line-height: 1.5em;
 }
+
 section#content:after {
   content: "";
   display: block;
@@ -431,5 +467,3 @@ section#content:after {
   height: 5px;
   margin-bottom: 1em;
 }
-
-
