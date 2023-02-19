@@ -16,7 +16,7 @@ const Result = () => {
 						</figure>
                     </Col>
                     <Col sm="12" lg="8">
-                        <span class="citation">"Don't under&shy;estimate the Force. I suggest you try it again, Luke."</span>
+                        <span class="citation founderh11">"Don't under&shy;estimate the Force. I suggest you try it again, Luke."</span>
                         <p>Partially, but it also obeys your commands. Hey, Luke! May the Force be with you. I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
                         artially, but it also obeys your commands. Hey, Luke! May the Force be with you. I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
                         artially, but it also obeys your commands. Hey, Luke! May the Force be with you. I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
@@ -27,6 +27,7 @@ const Result = () => {
                 </Row>
 
                 <br/><br/><span class="headline hl4"><center>References</center></span>
+                <br/><br/>
                 <Row>
                     <Col sm="12" lg="3">
                     <a>Partially, but it also obeys your commands. Hey, Luke! May </a>
