@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Footer from './footer';
 import Result from './result';
 import Example from './example';
@@ -16,10 +16,11 @@ const Home = () => {
   // }
 
   const [searchResults, setSearchResults] = useState(null);
+
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(true);
   const [d, setD] = useState(false);
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // try {
     //   console.log(requestOptions)
@@ -35,29 +36,33 @@ const Home = () => {
     setD(true)
     setIsError(true)
 
-    axios
+    const requests = [    axios
       .post('https://jllewis11--modal-serverless-api-fastapi-app.modal.run/summarize/', {
         url_link: searchInput
       }, {
         headers: {
           "Content-Type": "application/json"
         }
-      })
-      .then(res => {
-        console.log(res.data);
-        setSearchResults(res.data);
+      }), axios.post('https://jllewis11--modal-serverless-api-fastapi-app.modal.run/search/', {
+        url_link: searchInput
+      }, {
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })]
+      try {
+        const responses = await Promise.all(requests);
+        console.log(responses);
+        setSearchResults(responses);
         setIsLoading(false);
-
-      })
-      .catch((err) => {
-        err != 200 ? setIsError(false) : setIsError(true);
+      } catch (error) {
+        error !== 200 ? setIsError(false) : setIsError(true);
         setIsLoading(false)
         console.log(isError)
-        console.log(err)
-      })
+        console.log(error)
+      }
 
   };
-
   return (
     <div>
 
@@ -92,27 +97,14 @@ const Home = () => {
                     </figure>
                   </Col>
                   <Col sm="12" lg="8">
-                    <span class="citation founderh11">"Don't under&shy;estimate the Force. I suggest you try it again, Luke."</span>
-                    <p>{searchResults.choices[0].text}</p>
+                    <span class="citation founderh11">{searchResults[0].data.choices[0].text.split(/\.|\?|!/)[0]}</span>
+                    <p>{searchResults[0].data.choices[0].text}</p>
+                    <p>{Object.keys(searchResults[1].data).map(key => " " + key + ": " + searchResults[1].data[key])}</p> 
                   </Col>
                 </Row>
 
                 <br /><br /><span class="headline hl4"><center>References</center></span>
                 <br /><br />
-                <Row>
-                  <Col sm="12" lg="3">
-                    <a>Partially, but it also obeys your commands. Hey, Luke! May </a>
-                  </Col>
-                  <Col sm="12" lg="3">
-                    <a>Partially, but it also obeys your commands. Hey, Luke! May the Force be with you. </a>
-                  </Col>
-                  <Col sm="12" lg="3">
-                    <a>Partially, but it also obeys your commands. Hey, Luke! May the Force be with you. I have traced the Rebel spies to her. Now she is my only link to finding their secret base.</a>
-                  </Col>
-                  <Col sm="12" lg="3">
-                    <a>Partially, but it also obeys your commands. Hey, Luke! May the Force be with you. I have traced the Rebel spies to her. Now she is my only link to finding their secret base.</a>
-                  </Col>
-                </Row>
               </Container>
             </div>
           // <Result />
